@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [UIAutomationSuite]" parallel="tests">
+  <parameter name="environment" value="Staging"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="MyTest1-chrome(failed)" parallel="tests">
+    <parameter name="environment" value="Staging"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mycompany.sdet.Suite.Calculator.CalcApplication">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="substractOperation"/>
+          <include name="ZeroByNumberOperation"/>
+          <include name="tearDown"/>
+          <include name="multiplyOperation"/>
+          <include name="divisionOperation"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mycompany.sdet.Suite.Calculator.CalcApplication -->
+    </classes>
+  </test> <!-- MyTest1-chrome(failed) -->
+</suite> <!-- Failed suite [UIAutomationSuite] -->
